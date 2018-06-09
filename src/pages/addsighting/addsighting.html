@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="darklightblue" align-title="center">
+    <ion-buttons start left>
+      <button ion-button full (click)="back()"><ion-icon name="ios-arrow-back-outline"></ion-icon></button>
+    </ion-buttons>
+    <ion-title mode="ios" text-center><h2 text-wrap>Add sighting for {{bird.bird_name}}</h2></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backcontent">
+
+  <form [formGroup]="group" (ngSubmit)="add()">
+      <ion-item>
+        <ion-label>Place</ion-label>
+          <ion-input type="text" formControlName="place" [(ngModel)]="sightings.place"></ion-input>
+        </ion-item>
+      <ion-item no-lines padding>
+          <ion-label>Latitude</ion-label>
+          <ion-input formControlName="latitude" [readonly]="true" [(ngModel)]="sightings.lat"></ion-input>
+      </ion-item>
+      <ion-item no-lines padding>
+          <ion-label>Logintude</ion-label>
+          <ion-input formControlName="longitude" [readonly]="true" [(ngModel)]="sightings.long"></ion-input>
+      </ion-item>
+      <div padding>
+        <button ion-button block type="submit" [disabled]="!group.valid">Send</button>
+      </div>
+  </form>
+
+</ion-content>

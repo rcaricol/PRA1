@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="darklightblue" align-title="center">
+    <ion-buttons start left>
+      <button ion-button full (click)="main()"><ion-icon name="ios-arrow-back-outline"></ion-icon></button>
+    </ion-buttons>
+    <ion-title mode="ios"><h1>Configuration</h1></ion-title>
+    <ion-buttons end>
+        <button ion-button full (click)="logout()"><ion-icon name="exit" ios="ios-exit" md="md-exit" color="white"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item no-lines>
+      <ion-label class="label-item" text-wrap>Do you want to remember password?</ion-label>
+      <ion-checkbox mode="ios"  [(ngModel)]="rememberPassword"></ion-checkbox>
+    </ion-item>
+    <div padding>
+      <button ion-button block (click)="save()">Save changes</button>
+    </div>
+  </ion-list>
+</ion-content>

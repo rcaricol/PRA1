@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="darklightblue" align-title="center">
+    <ion-buttons start left>
+      <button ion-button full (click)="back()"><ion-icon name="ios-arrow-back-outline"></ion-icon></button>
+    </ion-buttons>
+    <ion-title mode="ios"><h1>List of sightings</h1></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backcontent">
+  <ion-list>
+    <ion-item no-lines padding *ngFor ="let sighting of bird.sightings_list" color="item-list" class="item-list">
+      <ion-avatar item-start>
+        <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+      </ion-avatar>
+      <ion-row>
+        <ion-col col-12 text-wrap>
+          <h2 class="item-list">{{sighting.place}}</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <span class="rounded color-sight-item-mio size-item">{{formatDecimal(sighting.lat)}}</span>
+        </ion-col>
+        <ion-col col-6>
+          <span class="rounded color-sight-item-duo size-item">{{formatDecimal(sighting.long)}}</span>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-list>
+</ion-content>

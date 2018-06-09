@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="logo" class="header header-ios">
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title mode="ios"><h1>Login for App</h1></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <!-- dimensions set using attributes -->
+  <div text-center>
+    <ion-img width="200" height="200" src="../../assets/imgs/mylogo.png"></ion-img>
+    <ion-label class="author">By Rafael Caricol Bermejo</ion-label>
+  </div>
+  <form [formGroup]="group" (ngSubmit)="loginUser()">
+    <ion-list inset>
+      <ion-item>
+        <ion-label>Username</ion-label>
+        <ion-input type="text" formControlName="userName" placeholder="Input your username" [(ngModel)]="userName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input type="password" formControlName="password" placeholder="Input your password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button full type="submit" [disabled]="!group.valid">Sign In</button>
+    </div>
+  </form>
+</ion-content>

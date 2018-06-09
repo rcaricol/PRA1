@@ -1,0 +1,105 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+h1{
+  color: #fff;
+  //color: #488aff;
+}
+
+h2{
+  color: #fff;
+}
+
+h2.item-list{
+  font-style: oblique;
+  font-weight: bold;
+  color: #000;
+}
+
+h2.alert-title{
+  color: #546390;
+}
+
+p.description{
+  align: justify;
+  font-style: oblique;
+  font-weight: bold;
+  //color: #000;
+  color: #546390;
+}
+
+.rounded {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0px 0px 0px -2px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.none{
+  background-color: #008000;
+}
+
+.mine{
+  background-color: #FF0000;
+}
+
+.color-sight-item{
+  background-color: #3366cc;
+}
+
+.color-sight-item-mio{
+  background-color: #0088cc
+}
+
+.color-sight-item-duo{
+  background-color: #66ccff;
+}
+
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+  color: #00004d;
+}
+
+.tabs-md .tab-button[aria-selected=true] {
+  color: #00004d;
+}
+
+.tabs-md .tab-button-icon {
+  color: #99bbff;
+}
+
+.tabs-md .tab-button {
+  color: #99bbff;
+}
+
+.backcontent{
+  background-color:  #e8eef4;
+}
+
+.checkbox-icon{
+  border-color: #21bdf4 !important;
+}
+
+.image-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 15px;
+}

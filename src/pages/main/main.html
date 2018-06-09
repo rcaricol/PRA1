@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="darkblue" align-title="center">
+    <ion-buttons start left>
+      <button ion-button full (click)="info()"><ion-icon ios="ios-menu" md="md-menu"></ion-icon></button>
+    </ion-buttons>
+    <ion-title mode="ios" text-center><h1>Main Menu</h1></ion-title>
+    <ion-buttons end>
+        <button ion-button full (click)="logout()"><ion-icon name="exit" ios="ios-exit" md="md-exit" color="white"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="backcontent">
+    <ion-grid>
+      <ion-row>
+          <ion-col col12>
+            <button ion-button block (click)="list()">List of Birds</button>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col12>
+            <button ion-button block (click)="add()">Add Bird</button>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col12>
+            <button ion-button block (click)="info()">Session Information</button>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col12>
+            <button ion-button block (click)="configuration()">Configuration</button>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col col12>
+            <button ion-button block (click)="logout()">Logout</button>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

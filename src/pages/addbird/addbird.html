@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar color="darklightblue" align-title="center">
+    <ion-buttons start left>
+      <button ion-button full (click)="back()"><ion-icon name="ios-arrow-back-outline"></ion-icon></button>
+    </ion-buttons>
+    <ion-title mode="ios"><h1>Add bird</h1></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backcontent">
+  <form [formGroup]="group" (ngSubmit)="add()">
+      <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input type="text" formControlName="name" [(ngModel)]="bird.bird_name"></ion-input>
+      </ion-item>
+      <ion-item no-lines>
+          <ion-label>Description</ion-label>
+          <ion-textarea formControlName="description" [(ngModel)]="bird.bird_description"></ion-textarea>
+      </ion-item>
+      <ion-item padding no-lines>
+        <ion-label class="label-item">¿Add place?</ion-label>
+        <ion-checkbox mode="ios" formControlName="placeVisible" [(ngModel)]="bird.placeVisible" (onchange)="placeVisibleChange()"></ion-checkbox>
+      </ion-item>
+      <ion-item [hidden]="!bird.placeVisible">
+        <ion-label>Place</ion-label>
+        <ion-input formControlName="place" type="text" [(ngModel)]="bird.place"></ion-input>
+      </ion-item>
+      <ion-item [hidden]="!bird.placeVisible">
+          <ion-label>Latitude</ion-label>
+          <ion-input formControlName="lat" [readonly]="true" [(ngModel)]="bird.lat"></ion-input>
+      </ion-item>
+      <ion-item [hidden]="!bird.placeVisible">
+          <ion-label>Logintude</ion-label>
+          <ion-input formControlName="long" [readonly]="true" [(ngModel)]="bird.long"></ion-input>
+      </ion-item>
+      <div padding>
+        <button ion-button block type="submit" [disabled]="!group.valid">Send</button>
+      </div>
+  </form>
+</ion-content>

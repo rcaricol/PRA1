@@ -1,0 +1,30 @@
+{
+  "name": "PRA1",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/login",
+      "proxyUrl": "http://dev.contanimacion.com/birds/public/login/"
+    },
+    {
+      "path": "/get",
+      "proxyUrl": "http://dev.contanimacion.com/birds/public/getBirds/"
+    },
+    {
+      "path": "/detail",
+      "proxyUrl": "http://dev.contanimacion.com/birds/public/getBirdDetails/"
+    },
+    {
+      "path": "/addsighting",
+      "proxyUrl": "http://dev.contanimacion.com/birds/public/addSighting"
+    },
+    {
+      "path": "/addbird",
+      "proxyUrl": "http://dev.contanimacion.com/birds/public/addBird"
+    }
+  ]
+}
