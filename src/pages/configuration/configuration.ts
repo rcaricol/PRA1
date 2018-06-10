@@ -8,7 +8,7 @@ import { AlertController } from 'ionic-angular';
 import { LoadingController } from 'ionic-angular';
 import { LoadingService } from '../../Loading/loading.service';
 
-import { IUser } from '../../Model/IUser';
+import { IUser } from '../../services/IUser';
 import { UserProvider } from './../../providers/user';
 
 @IonicPage()

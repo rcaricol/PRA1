@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ViewController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { ItemPage } from '../item/item';
-import { IBirdDetail } from '../../Model/IBirdDetail';
+import { IBirdDetail } from '../../services/IBirdDetail';
 import { UserProvider } from './../../providers/user';
 import { LoadingController } from 'ionic-angular';
 import { LoadingService } from '../../Loading/loading.service';

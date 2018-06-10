@@ -20,8 +20,8 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { NativeGeocoder, NativeGeocoderReverseResult, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 import { IonicStorageModule } from '@ionic/storage';
 
-import { UserService } from '../Model/user.service';
-import { BirdService } from '../Model/bird.service';
+import { UserService } from '../services/user.service';
+import { BirdService } from '../services/bird.service';
 import { LocalStorageService } from '../storage/local.service';
 import { UserProvider } from './../providers/user';
 import { GeocoderProvider } from './../providers/geocoder';

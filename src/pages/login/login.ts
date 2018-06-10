@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { UserService } from '../../Model/user.service';
+import { UserService } from '../../services/user.service';
 import { AlertService } from '../../alert/alert.service';
 import { HttpClient } from '@angular/common/http';
 import { Http, Headers, RequestOptions } from '@angular/http';
@@ -11,7 +11,7 @@ import { LoadingController } from 'ionic-angular';
 import { LoadingService } from '../../Loading/loading.service';
 import { UserProvider } from './../../providers/user';
 import { GeocoderProvider } from './../../providers/geocoder';
-import { IUser} from '../../Model/IUser';
+import { IUser} from '../../services/IUser';
 
 @IonicPage()
 @Component({

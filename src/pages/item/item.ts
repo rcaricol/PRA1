@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ViewController } from 'ionic-angular';
-import { IBirdDetail } from '../../Model/IBirdDetail';
+import { IBirdDetail } from '../../services/IBirdDetail';
 import { AddsightingPage } from '../addsighting/addsighting';
 import { LoginPage } from '../login/login';
 import { ListPage } from '../list/list';

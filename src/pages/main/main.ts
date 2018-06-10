@@ -6,9 +6,9 @@ import { ListPage } from '../list/list';
 import { LoginPage } from '../login/login';
 import { AddbirdPage } from '../addbird/addbird';
 import { ConfigurationPage } from '../configuration/configuration';
-import { IUser } from '../../Model/IUser';
+import { IUser } from '../../services/IUser';
 import { AlertService } from '../../alert/alert.service';
-import { UserService } from '../../Model/user.service';
+import { UserService } from '../../services/user.service';
 import { AlertController } from 'ionic-angular';
 import { UserProvider } from './../../providers/user';
 
