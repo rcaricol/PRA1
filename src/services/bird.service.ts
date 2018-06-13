@@ -22,10 +22,14 @@ interface IValidate{
 
 @Injectable()
 export class BirdService{
-  private url_get:string = "/get/";
-  private url_get_detail:string = "/detail/";
-  private url_post_add_sighting:string = "/addsighting";
-  private url_post_add_bird:string = "/addbird";
+  //private url_get:string = "/get/";
+  private url_get:string = "http://dev.contanimacion.com/birds/public/getBirds/";
+  //private url_get_detail:string = "/detail/";
+  private url_get_detail:string = "http://dev.contanimacion.com/birds/public/getBirdDetails/";
+  //private url_post_add_sighting:string = "/addsighting";
+  private url_post_add_sighting:string = "http://dev.contanimacion.com/birds/public/addSighting";
+  //private url_post_add_bird:string = "/addbird";
+  private url_post_add_bird:string = "http://dev.contanimacion.com/birds/public/addBird";
   private bird: IBird = {id:0, bird_name: "", bird_image: "", bird_sightings: "", mine: 0};
   private httpClient: HttpClient;
 

@@ -17,7 +17,8 @@ interface IValidate{
 
 @Injectable()
 export class UserService{
-  private url:string = "/login";
+  //private url:string = "/login";
+  private url:string = "http://dev.contanimacion.com/birds/public/login/";
   public user: IUser = {Id:"", UserName: "", Password: "", IsActive: false, RememberPassword: false};
   private httpClient: HttpClient;
   private PERSISTENT_STORAGE_NAME: string = "user";
